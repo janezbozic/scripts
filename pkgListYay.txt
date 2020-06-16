@@ -1,0 +1,10 @@
+android-sdk
+android-sdk-platform-tools
+epson-inkjet-printer-escpr
+google-chrome
+heroku-cli
+libcurl-openssl-1.0
+python-cheetah3
+spotify
+virtualbox-ext-oracle
+xdg-su
