@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#pacman-mirrors --fasttrack
-#pacman -Syyu --noconfirm
+pacman-mirrors --fasttrack
+pacman -Syyu --noconfirm
 
-#pacman -S $(comm -12 <(pacman -Slq | sort) <(sort scripts/pkglistPacman.txt)) --noconfirm
+pacman -S $(comm -12 <(pacman -Slq | sort) <(sort scripts/pkglistPacman.txt)) --noconfirm
 
 sudo -u $SUDO_USER yay -S --mflags --skipinteg --noconfirm $(comm -12 <(yay -Slq | sort) <(sort scripts/pkgListYay.txt))
 
