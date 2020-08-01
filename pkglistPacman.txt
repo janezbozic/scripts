@@ -121,10 +121,7 @@ inxi
 iproute2
 iputils
 jdk-openjdk
-jdk8-openjdk
 jfsutils
-jre8-openjdk
-jre8-openjdk-headless
 kernel-alive
 less
 lib32-libva-vdpau-driver
@@ -280,7 +277,6 @@ util-linux
 vi
 vim
 vino
-virtualbox
 vlc
 vulkan-intel
 vulkan-radeon
@@ -309,3 +305,4 @@ xz
 yay
 yelp
 zsh
+virtualbox
