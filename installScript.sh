@@ -5,7 +5,9 @@ pacman -Syyu --noconfirm
 
 pacman -S $(comm -12 <(pacman -Slq | sort) <(sort scripts/pkglistPacman.txt)) --noconfirm
 
-sudo -u $SUDO_USER yay -S --skippgpcheck --noconfirm $(comm -12 <(yay -Slq | sort) <(sort scripts/pkgListYay.txt))
+echo "keyserver pool.sks-keyservers.net" >> .gnupg/gpg.conf
+
+sudo -u $SUDO_USER yay -S --noconfirm $(comm -12 <(yay -Slq | sort) <(sort scripts/pkgListYay.txt))
 
 sudo -u $SUDO_USER sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
